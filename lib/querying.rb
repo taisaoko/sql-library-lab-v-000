@@ -12,7 +12,9 @@ end
 
 
 def select_value_and_count_of_most_prolific_species
-  "Write your SQL query here"
+  "SELECT species, COUNT(species) AS num_species FROM characters
+    ORDER BY num_species DESC
+    LIMIT 1;"
 end
 
 def select_name_and_series_subgenres_of_authors
